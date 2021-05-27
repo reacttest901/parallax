@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Sample paralax scrolling effect</title>
+        <link rel="stylesheet" href="./css/index.css">
+        
+    </head>
+    <body>
+        
+        <img src="./images/background.png" alt="" class="stars"  id="stars">
+        
+        <img src="./images/moon2.png" alt=""  id="moon" class="moon">
+        <h1 class="text" id="text" >Moon</h1>
+        <img src="./images/mountains.png" alt="" id="mountain" class="mountain">
+
+        <div id="texts" class="texts">
+            <h1 class="texthead" >Text Heading</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium maiores eveniet, voluptatibus quas facere aliquam. Repellendus repellat labore omnis sapiente deleniti, porro, a ratione recusandae quos ex autem fuga? Provident?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis asperiores, fugit animi nulla odio, explicabo maxime itaque tempore nostrum pariatur in vero reiciendis sapiente! Distinctio quas ad eveniet. Expedita, omnis.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium maiores eveniet, voluptatibus quas facere aliquam. Repellendus repellat labore omnis sapiente deleniti, porro, a ratione recusandae quos ex autem fuga? Provident?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis asperiores, fugit animi nulla odio, explicabo maxime itaque tempore nostrum pariatur in vero reiciendis sapiente! Distinctio quas ad eveniet. Expedita, omnis.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium maiores eveniet, voluptatibus quas facere aliquam. Repellendus repellat labore omnis sapiente deleniti, porro, a ratione recusandae quos ex autem fuga? Provident?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis asperiores, fugit animi nulla odio, explicabo maxime itaque tempore nostrum pariatur in vero reiciendis sapiente! Distinctio quas ad eveniet. Expedita, omnis.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium maiores eveniet, voluptatibus quas facere aliquam. Repellendus repellat labore omnis sapiente deleniti, porro, a ratione recusandae quos ex autem fuga? Provident?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis asperiores, fugit animi nulla odio, explicabo maxime itaque tempore nostrum pariatur in vero reiciendis sapiente! Distinctio quas ad eveniet. Expedita, omnis.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium maiores eveniet, voluptatibus quas facere aliquam. Repellendus repellat labore omnis sapiente deleniti, porro, a ratione recusandae quos ex autem fuga? Provident?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis asperiores, fugit animi nulla odio, explicabo maxime itaque tempore nostrum pariatur in vero reiciendis sapiente! Distinctio quas ad eveniet. Expedita, omnis.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium maiores eveniet, voluptatibus quas facere aliquam. Repellendus repellat labore omnis sapiente deleniti, porro, a ratione recusandae quos ex autem fuga? Provident?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis asperiores, fugit animi nulla odio, explicabo maxime itaque tempore nostrum pariatur in vero reiciendis sapiente! Distinctio quas ad eveniet. Expedita, omnis.</p>
+
+        </div>
+    </body>
+    <script>
+        let moon = document.getElementById('moon');
+        let stars = document.getElementById('stars')
+        let mountain = document.getElementById('mountain')
+        let text = document.getElementById('text')
+        let texts = document.getElementById('texts')
+
+        window.addEventListener('scroll',function(){
+            let x = window.scrollX;
+            let y = window.scrollY;
+            moon.style.top = y * 0.90 +50+ 'px';
+            moon.style.left = y * 0.50 +400 +'px';
+            mountain.style.top = y * 0.50 + 'px';
+            stars.style.top = y * 0.50 + 'px';
+            text.style.top = y * 0.50 +200+ 'px';
+            text.style.left = y * 0.50 +100+ 'px';
+            
+
+        })
+    </script>
+</html>
